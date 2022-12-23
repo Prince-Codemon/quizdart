@@ -18,7 +18,9 @@ if (process.env.NODE_ENV === "production") {
     res.sendFile(path.resolve(__dirname,"frontend", "build","index.html"))
   })
 }
-
+app.get('/',(req,res)=>{
+  res.send('Hello World')
+})
 
 app.use(router)
 
