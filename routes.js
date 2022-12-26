@@ -1,5 +1,5 @@
 const router = require('express').Router()
-const UserController = require('../backend/controllers/userController')
+const UserController = require('./controllers/userController')
 
 router.post('/api/register', UserController.register )
 router.post('/api/login', UserController.login )

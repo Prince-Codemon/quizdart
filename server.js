@@ -5,7 +5,7 @@ const bodyparser = require('body-parser')
 const app = express()
 const cors = require('cors')
 const PORT = process.env.PORT || 3001
-const router = require('../backend/routes')
+const router = require('./routes')
 app.use(cors())
 app.use(express.json())
 app.use(bodyparser.json())

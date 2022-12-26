@@ -1,6 +1,6 @@
-const User = require("../Models/userModel");
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
+const User = require("../Models/userMxodel");
 const Quiz = require("../Models/quizModel");
 class UserController {
   /**
